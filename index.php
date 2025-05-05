@@ -1,6 +1,6 @@
 <?php
-    $username = 'admin';
-    $password = 'admin';
+    $username = ''; // redacted
+    $password = ''; // redacted
 
     if(
         !isset($_GET['username']) &&

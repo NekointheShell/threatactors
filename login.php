@@ -1,6 +1,6 @@
 <?php
-    $username = 'admin';
-    $password = 'admin';
+    $username = ''; // redacted
+    $password = ''; // redacted
 
     if(
         $_SERVER['REQUEST_METHOD'] === 'POST' &&
