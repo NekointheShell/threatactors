@@ -1,6 +1,15 @@
 <?php
-    if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['username']) && isset($_POST['password'])) {
-        echo '<meta http-equiv="refresh" content="0;url=/?loggedin=true">';
+    $username = 'admin';
+    $password = 'admin';
+
+    if(
+        $_SERVER['REQUEST_METHOD'] === 'POST' &&
+        isset($_POST['username']) &&
+        isset($_POST['password']) &&
+        $_POST['username'] == $username &&
+        $_POST['password] == $password
+    ) {
+        echo "<meta http-equiv='refresh' content='0;url=/?username=" . $_POST['username'] . "&password=" . $_POST['password'] . "'>";
     }
 ?>
 

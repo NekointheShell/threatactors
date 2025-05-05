@@ -1,5 +1,13 @@
 <?php
-    if(!isset($_GET['loggedin'])) {
+    $username = 'admin';
+    $password = 'admin';
+
+    if(
+        !isset($_GET['username']) &&
+        !isset($_GET['password'] &&
+        $_GET['username'] == $username &&
+        $_GET['password'] == $password
+    ) {
         echo '<meta http-equiv="refresh" content="0;url=/login.php">';
     }
 
